@@ -14,7 +14,7 @@ def calculate_wendler_531(orms):
     :return: A dictionary with the workout plan for each week
     """
     workout_plan = {}
-    training_maxes = {lift: max * 0.9 for lift, max in zip(["squat", "bench", "deadlift", "overhead_press"], orms)}
+    training_maxes = {lift: max * 0.9 for lift, max in zip(["SQUAT", "BENCH", "DEADLIFT", "OHP"], orms)}
 
     # Define the rep schemes and percentages for each week
     rep_schemes = {
