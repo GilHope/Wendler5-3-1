@@ -41,3 +41,5 @@ if __name__ == "__main__":
     my_1rms = (315, 225, 405, 135)  # Replace with your 1RM for squat, bench, deadlift, overhead press
     workout_plan = calculate_wendler_531(my_1rms)
     print(workout_plan)
+
+    # Uncomment the above ' Test Call ' scrip, open terminal and run this command to test: ' python3 wendler_func.py '
