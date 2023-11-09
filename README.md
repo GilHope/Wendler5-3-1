@@ -11,3 +11,10 @@ This repository contains a Python script for calculating weekly workout plans ba
   - Week 3: Sets of 5, 3, and 1 rep at 75%, 85%, and 95% of training max
   - Week 4: Deload week with sets of 5 reps at 40%, 50%, and 60% of training max
 - Weights rounded to the nearest 5 lbs to match common gym equipment increments
+
+To use this script, you will need Python 3 installed on your system. Clone the repository, navigate to the project directory, and run the script with your 1RM values.
+
+```bash
+git clone [repository-url]
+cd [local-repository-name]
+python3 wendler_func.py
