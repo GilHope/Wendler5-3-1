@@ -28,7 +28,7 @@ def calculate_wendler_531(orms):
     for week, reps_and_percs in rep_schemes.items():
         workout_plan[week] = {}
         for lift, training_max in training_maxes.items():
-            workout_plan[week][lift] = [("{} Reps".format(reps), round(training_max * perc / 5) * 5) for reps, perc in reps_and_percs]
+            workout_plan[week][lift] = [("{} Reps".format(reps), "{}lbs".format(round(training_max * perc / 5) * 5)) for reps, perc in reps_and_percs]
 
     return workout_plan
 
