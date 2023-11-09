@@ -14,14 +14,14 @@ def calculate_wendler_531(orms):
     :return: A dictionary with the workout plan for each week
     """
     workout_plan = {}
-    training_maxes = {lift: max * 0.9 for lift, max in zip(["SQUAT", "BENCH", "DEADLIFT", "OHP"], orms)}
+    training_maxes = {lift: max * 0.9 for lift, max in zip(["Squat", "Bench", "Deadlift", "OHP"], orms)}
 
     # Define the rep schemes and percentages for each week
     rep_schemes = {
-        "week1": [(5, 0.65), (5, 0.75), (5, 0.85)],
-        "week2": [(3, 0.70), (3, 0.80), (3, 0.90)],
-        "week3": [(5, 0.75), (3, 0.85), (1, 0.95)],
-        "week4": [(5, 0.40), (5, 0.50), (5, 0.60)]
+        "WEEK 1:": [(5, 0.65), (5, 0.75), (5, 0.85)],
+        "WEEK 2:": [(3, 0.70), (3, 0.80), (3, 0.90)],
+        "WEEK 3:": [(5, 0.75), (3, 0.85), (1, 0.95)],
+        "WEEK 4:": [(5, 0.40), (5, 0.50), (5, 0.60)]
     }
 
     # Calculate the weights for each set
