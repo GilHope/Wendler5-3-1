@@ -34,3 +34,10 @@ def calculate_wendler_531(orms):
 
 # For now, we'll just define the function. It will be called later with the user's 1RM inputs to generate the workout plan.
 # We round the weights to the nearest 5 as is common in many gyms where weights are available in 5-pound increments.
+
+# Test Call
+if __name__ == "__main__":
+    # Example 1RM inputs
+    my_1rms = (315, 225, 405, 135)  # Replace with your 1RM for squat, bench, deadlift, overhead press
+    workout_plan = calculate_wendler_531(my_1rms)
+    print(workout_plan)
