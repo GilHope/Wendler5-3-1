@@ -26,7 +26,7 @@ The input should be a tuple containing the 1RM values for the following lifts in
 
 Example:
 ```python
-my_1rms = (315, 225, 405, 135)  # Replace these values with your actual 1RMs
+default_1rms = (315, 225, 405, 135)  # Replace these default values with your actual 1RMs
 ```
 Now try calling it inside your terminal, run:
 
