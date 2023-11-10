@@ -34,7 +34,7 @@ def calculate_wendler_531(orms):
 #######################################################################################################
 
 
-# Test Call
+## Test Call ##
 
 if __name__ == "__main__":
     # Example 1RM inputs
@@ -44,13 +44,13 @@ if __name__ == "__main__":
     for week in workout_plan:
         print(f"{week}")
         for lift in workout_plan[week]:
-            # Format lift names to ALL CAPS
+            
             formatted_lift = lift.upper()
             print(f"{formatted_lift}: ")
 
             formatted_sets = ', '.join(f"({reps}, {weight})" for reps, weight in workout_plan[week][lift])
             print(formatted_sets)
-        print()  # Print a newline for better readability between weeks
+        print()
 
 
 #######################################################################################################
