@@ -22,13 +22,16 @@ def calculate_wendler_531(orms):
         formatted_week = f'{week}:'  # Add colon here to match your desired output
         workout_plan[formatted_week] = {}
         for lift, training_max in training_maxes.items():
-            # Format the output with "Reps" and "lbs" as specified
+            # Format the output with "reps" and "lbs" as specified
             workout_plan[formatted_week][lift] = [
-                (f'{reps} Reps', f'{round(training_max * perc / 5) * 5}lbs') for reps, perc in reps_and_percs
+                (f'{reps} reps', f'{round(training_max * perc / 5) * 5}lbs') for reps, perc in reps_and_percs
             ]
 
     return workout_plan
 
+
+#######################################################################################################
+#######################################################################################################
 
 
 # Test Call
@@ -44,7 +47,11 @@ if __name__ == "__main__":
             # Format lift names to ALL CAPS
             formatted_lift = lift.upper()
             print(f"{formatted_lift}: ")
-            
+
             formatted_sets = ', '.join(f"({reps}, {weight})" for reps, weight in workout_plan[week][lift])
             print(formatted_sets)
         print()  # Print a newline for better readability between weeks
+
+
+#######################################################################################################
+#######################################################################################################
