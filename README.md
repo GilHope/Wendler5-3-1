@@ -13,6 +13,8 @@ This program calculates the Wendler 5/3/1 workout routine based on the user's on
 
 To use this program, simply input your 1RM for the squat, bench press, deadlift, and overhead press. The program will output a four-week workout plan with the prescribed sets, reps, and weights.
 
+This current README reflects the updates featured in 'wendler_func_3'.
+
 ### Input Format
 
 The input should be a tuple containing the 1RM values for the following lifts in the given order:
