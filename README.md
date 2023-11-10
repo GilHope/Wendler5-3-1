@@ -35,5 +35,5 @@ The program can be called from the terminal as follows:
 
 Example:
 ```bash
-python3 wendler_531_calculator.py 315 225 405 135
+python3 wendler_531_calculator.py 315 225 405 135 # Replace these arguments with you actual 1RMs
 ```
