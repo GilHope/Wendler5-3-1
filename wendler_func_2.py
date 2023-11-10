@@ -44,8 +44,7 @@ if __name__ == "__main__":
             # Format lift names to ALL CAPS
             formatted_lift = lift.upper()
             print(f"{formatted_lift}: ")
-            # Convert tuple to string and remove commas for required format
-            # Convert tuple to string and format properly
+            
             formatted_sets = ', '.join(f"({reps}, {weight})" for reps, weight in workout_plan[week][lift])
             print(formatted_sets)
         print()  # Print a newline for better readability between weeks
