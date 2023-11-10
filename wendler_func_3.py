@@ -40,7 +40,7 @@ def calculate_wendler_531(orms):
 
 if __name__ == "__main__":
     # Default 1RM values
-    default_1rms = (315, 225, 405, 135)
+    default_1rms = (315, 225, 405, 135) # <--- Change these default values here!
     
     # If no command-line arguments are provided, use default values
     if len(sys.argv) == 1:
