@@ -28,6 +28,12 @@ Example:
 ```python
 my_1rms = (315, 225, 405, 135)  # Replace these values with your actual 1RMs
 ```
+Now try calling it inside your terminal, run:
+
+Example:
+```bash
+python3 wendler_func_3.py  
+```
 
 ### Terminal Call
 
@@ -35,5 +41,5 @@ The program can be called from the terminal as follows:
 
 Example:
 ```bash
-python3 wendler_531_calculator.py 315 225 405 135  # Replace these arguments with your actual 1RMs
+python3 wendler_func_3.py 315 225 405 135  # Replace these arguments with your actual 1RMs
 ```
