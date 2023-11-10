@@ -39,21 +39,35 @@ def calculate_wendler_531(orms):
 ## Test Call ##
 
 if __name__ == "__main__":
-    # Example 1RM inputs
-    my_1rms = (315, 225, 405, 135)  # Replace with your 1RM for squat, bench, deadlift, overhead press
+    # Default 1RM values
+    default_1rms = (315, 225, 405, 135)
+    
+    # If no command-line arguments are provided, use default values
+    if len(sys.argv) == 1:
+        my_1rms = default_1rms
+    elif len(sys.argv) == 5:
+        try:
+            # Parse command-line arguments to integers
+            my_1rms = tuple(int(arg) for arg in sys.argv[1:])
+        except ValueError as e:
+            print("Error: Please provide four integer values for the 1RMs.")
+            print(f"Exception message: {e}")
+            sys.exit(1)
+    else:
+        print("Usage: python3 wendler_func_2.py [squat_1rm bench_1rm deadlift_1rm ohp_1rm]")
+        sys.exit(1)
+    
     workout_plan = calculate_wendler_531(my_1rms)
-
+    
+    # Output the workout plan
     for week in workout_plan:
         print(f"{week}")
         for lift in workout_plan[week]:
-            
             formatted_lift = lift.upper()
             print(f"{formatted_lift}: ")
-
             formatted_sets = ', '.join(f"({reps}, {weight})" for reps, weight in workout_plan[week][lift])
             print(formatted_sets)
-        print()
-
+        print()  # Print a newline for better readability between weeks
 
 #######################################################################################################
 #######################################################################################################
