@@ -37,8 +37,14 @@ if __name__ == "__main__":
     # Example 1RM inputs
     my_1rms = (315, 225, 405, 135)  # Replace with your 1RM for squat, bench, deadlift, overhead press
     workout_plan = calculate_wendler_531(my_1rms)
+
     for week in workout_plan:
         print(f"{week}")
         for lift in workout_plan[week]:
-            print(f"{lift}: {workout_plan[week][lift]}")
+            # Format lift names to ALL CAPS
+            formatted_lift = lift.upper()
+            print(f"{formatted_lift}: ")
+            # Convert tuple to string and remove commas for required format
+            formatted_sets = [f"('{reps} Reps', '{weight}')" for reps, weight in workout_plan[week][lift]]
+            print(f"[{', '.join(formatted_sets)}]")
         print()  # Print a newline for better readability between weeks
