@@ -1,22 +1,37 @@
-### Wendler 5/3/1 Program Calculator
+# Wendler 5/3/1 Workout Program Calculator
 
-This repository contains a Python script for calculating weekly workout plans based on the Wendler 5/3/1 program. The Wendler 5/3/1 program is a popular strength training regimen designed by Jim Wendler for weightlifters looking to gain strength systematically. This script helps users to generate a four-week workout schedule with specified weights and reps according to their one-rep max (1RM) for squat, bench press, deadlift, and overhead press.
+This program calculates the Wendler 5/3/1 workout routine based on the user's one-rep maxes (1RMs) for the squat, bench press, deadlift, and overhead press exercises.
 
 ## Features
 
-- Calculation of training maxes (90% of 1RM)
-- Weekly workout plans:
-  - Week 1: Sets of 5 reps at 65%, 75%, and 85% of training max
-  - Week 2: Sets of 3 reps at 70%, 80%, and 90% of training max
-  - Week 3: Sets of 5, 3, and 1 rep at 75%, 85%, and 95% of training max
-  - Week 4: Deload week with sets of 5 reps at 40%, 50%, and 60% of training max
-- Weights rounded to the nearest 5 lbs to match common gym equipment increments
+- Calculates 4-week training cycles.
+- Customizes weights for each exercise based on 90% of the user's 1RM.
+- Rounds the weights to the nearest 5lbs increment for practicality.
+- Outputs the workout plan in a clear, readable format.
 
-## Getting Started
+## Usage
 
-To use this script, you will need Python 3 installed on your system. Clone the repository, navigate to the project directory, and run the script with your 1RM values.
+To use this program, simply input your 1RM for the squat, bench press, deadlift, and overhead press. The program will output a four-week workout plan with the prescribed sets, reps, and weights.
 
+### Input Format
+
+The input should be a tuple containing the 1RM values for the following lifts in the given order:
+
+1. Squat
+2. Bench Press
+3. Deadlift
+4. Overhead Press
+
+Example:
+```python
+my_1rms = (315, 225, 405, 135)  # Replace these values with your actual 1RMs
+```
+
+### Terminal Call
+
+The program can be called from the terminal as follows:
+
+Example:
 ```bash
-git clone [repository-url]
-cd [local-repository-name]
-python3 wendler_func.py
+python3 wendler_531_calculator.py 315 225 405 135
+```
