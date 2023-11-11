@@ -9,6 +9,11 @@ This program calculates the Wendler 5/3/1 workout routine based on the user's on
 - Rounds the weights to the nearest 5lbs increment for practicality.
 - Outputs the workout plan in a clear, readable format.
 
+## Prerequisites
+
+This program is written in Python 3. If you don't have Python installed, download it from [python.org](https://www.python.org/downloads/).
+
+
 ## Usage
 
 To use this program, simply input your 1RM for the squat, bench press, deadlift, and overhead press. The program will output a four-week workout plan with the prescribed sets, reps, and weights.
