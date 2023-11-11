@@ -8,7 +8,7 @@ def calculate_wendler_531(orms):
     :return: A dictionary with the workout plan for each week
     """
     workout_plan = {}
-    # Adjust the keys to match the naming convention you want, all uppercase
+
     training_maxes = {lift: max * 0.9 for lift, max in zip(["SQUAT", "BENCH", "DEADLIFT", "OHP"], orms)}
 
     # Define the rep schemes and percentages for each week
@@ -21,10 +21,10 @@ def calculate_wendler_531(orms):
 
     # Calculate the weights for each set
     for week, reps_and_percs in rep_schemes.items():
-        formatted_week = f'{week}:'  # Add colon here to match your desired output
+        formatted_week = f'{week}:' 
         workout_plan[formatted_week] = {}
+
         for lift, training_max in training_maxes.items():
-            # Format the output with "reps" and "lbs" as specified
             workout_plan[formatted_week][lift] = [
                 (f'{reps} reps', f'{round(training_max * perc / 5) * 5}lbs') for reps, perc in reps_and_percs
             ]
@@ -67,7 +67,8 @@ if __name__ == "__main__":
             print(f"{formatted_lift}: ")
             formatted_sets = ', '.join(f"({reps}, {weight})" for reps, weight in workout_plan[week][lift])
             print(formatted_sets)
-        print()  # Print a newline for better readability between weeks
+        print()  
+
 
 #######################################################################################################
 #######################################################################################################
