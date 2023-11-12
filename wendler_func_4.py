@@ -72,3 +72,9 @@ if __name__ == "__main__":
 
 #######################################################################################################
 #######################################################################################################
+
+# The program can be called from the terminal as follows:
+
+# Example:
+
+# python3 wendler_func_3.py 315 225 405 135  # Replace these arguments with your actual 1RMs
