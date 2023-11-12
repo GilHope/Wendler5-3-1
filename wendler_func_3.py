@@ -54,7 +54,7 @@ if __name__ == "__main__":
             print(f"Exception message: {e}")
             sys.exit(1)
     else:
-        print("Usage: python3 wendler_func_2.py [squat_1rm bench_1rm deadlift_1rm ohp_1rm]")
+        print("Usage: python3 wendler_func_3.py [squat_1rm bench_1rm deadlift_1rm ohp_1rm]")
         sys.exit(1)
     
     workout_plan = calculate_wendler_531(my_1rms)
