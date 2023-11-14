@@ -53,4 +53,4 @@ python3 wendler_func_3.py 315 225 405 135  # Replace these arguments with your a
 
 # In Progress
 
-Build into simple web app.
+Build into simple web app with best practices and comprehensive deployment pipeline.
