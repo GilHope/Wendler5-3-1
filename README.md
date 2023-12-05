@@ -18,7 +18,7 @@ This program is written in Python 3. If you don't have Python installed, downloa
 
 To use this program, simply input your 1RM for the squat, bench press, deadlift, and overhead press. The program will output a four-week workout plan with the prescribed sets, reps, and weights.
 
-**_This current README reflects the updates featured in 'wendler_func_3'._**
+**_This current README reflects the updates featured in 'wendler_func_4'._**
 
 ### Input Format
 
@@ -37,7 +37,7 @@ Now try calling it inside your terminal, run:
 
 Example:
 ```bash
-python3 wendler_func_3.py  
+python3 wendler_func_4.py  
 ```
 
 ### Terminal Call
